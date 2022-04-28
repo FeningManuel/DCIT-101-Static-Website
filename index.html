@@ -1,0 +1,273 @@
+<doctype html>
+    <html>
+    <head>
+        <style>
+        /* Home Section */
+            #Home {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0,0,0,0.5);
+            }
+            #Home{
+                background: url(./images.jpg) no-repeat center center/cover;
+                height: 900px;
+                width: 100%;
+             }
+             .main{
+                 margin: 250px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+            }
+            .headings{
+                     font-family: 'Times New Roman', Times, serif;
+                     font-size: 60px;
+                     text-align: center;
+                     margin: 40px 0px;
+                     color: rgb(243, 4, 4);
+            }
+                 .btn{
+                     padding: 10px 35px;
+                     background-color: transparent;
+                     border: 1px solid white;
+                     color: rgb(255, 255, 255);
+                     outline: none;
+                     transition: .6s ease;
+                     }
+                 .btn:hover{
+                         cursor: pointer;
+                         background-color: rgb(0, 0, 0);
+                         box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+                         font-weight: bold;
+
+                     }             
+
+            .text{
+                background-color:rgb(0, 0, 0);
+            }
+            ul li:hover{
+                background-color: rgb(0, 0, 0);
+            }
+            
+                .txt{
+                /* position: absolute; */
+                left: 10%;
+                top: 66%; 
+                width: 700px;
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+            /* Navbar */ 
+            .navbar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0,0,0,0.5);
+                position: sticky;
+                top: 0;
+            } 
+            .navbar ul{
+                display: flex;
+                list-style: none;
+                margin: 20px 0px;
+                
+            } 
+            .navbar ul li{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: white;
+                padding: 8px 25px;
+                transition: all .5s ease;
+            }
+            /* About */
+            #about{
+                padding: 20px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width: 900px;
+                /* height: 400px; */
+            }
+            #intro{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            #intro h2{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            #Portfolio{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0,0,0,0.9);
+                color: beige;
+                  
+            }
+             
+            .gallery{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                box-sizing: border-box;
+
+            }
+            .gallery img{
+                 width: 360px;
+                 height: 240px;
+                 margin: 10px;
+             }
+
+             #Service{
+                 display: flex;
+                 flex-direction: column;
+                 padding: 20px;
+             }
+             .row{
+                 display: flex;
+
+             }
+
+             .box{
+                 display: flex;
+                 flex-direction: column;
+                 width: 350px;
+                 height: 450px;
+                 border: 1px solid black;
+                 margin: 10px;
+                 align-items: center;
+                 text-align: justify;
+                 padding: 10px;
+                 border-radius: 15px;
+                 background-color: linear-gradient( to top, rgb(255,45,45) 50%, white 50%);
+                 background-size: 100% 200%;
+                 transition: all .8;
+             }
+             .box:hover{
+                 background-position: left bottom;
+                 color: black;
+                 border: none;
+                 box-shadow: 0 0 20px rgb(255,45,45);
+             }
+        
+    
+        </style>
+    </head>  
+    <body>
+        <nav class="navbar">
+        <ul type="none">
+        <li> <a href="#Home">Home</a></li>
+        <li> <a href="#About"> About</a></li>
+        <li> <a href="#Portfolio"> Portfolio </a></li>
+        <li> <a href="#Service"> Service</a></li>
+        <li> <a href="#Price"> Price</a></li>
+        <li> <a href="https://twitter.com/Fening7" target="_blank"> Contact</a></li>
+    
+        </ul>
+        </nav>
+
+        <selection id="Home">
+            <div class="main">
+                <h3 class="headings">
+                    INTERNET CAFE
+                    </h3>
+                    <button class="btn">
+                        BOOK TIME 
+                    </button>
+            </div>
+        </selection>
+
+            <selection id="About">
+                        <h1 class="headings"> ABOUT SERIVCE</h1>
+                        <img src="./imagess.jpg" alt="">
+                        <div id="intro">
+                             <h2>INTERNET CAFE</h2>
+                             <p>
+                                We give the best access to the Internet with fastest network service.
+                                locate us and feel the transformation of the modern world.
+                                If you want to Contact us, click on the navigation bar to get in touch with us. 
+                            </p>
+                        </div>
+            </selection>
+
+            <section id="Portfolio">
+              <h1 class="headings">PORTFOLIO</h1>
+              <div class="gallery">
+                  <img src="./key.jpg" alt="">
+                  <img src="./lap.jpg" alt="">
+                  <img src="./po.jpeg" alt="">
+                  <img src="./sys.png" alt="">
+                  <img src="./poo.jpg" alt="">
+                  <img src="./gam.jpg" alt="">
+                
+
+              </div>
+             </section>
+             <section id="Service">
+                <h1 class="headings">SERVICE</h1>
+                <div class="row">
+                <div class="box">
+                <h1 class="headings">Website Design</h1>  
+                  <p>I am the best Web Designer in Ghana so far. I create any kinds of Website to anybody around the world.
+                      So if you need any Website, then you should Contact me on any of my platform provided there.  </p>
+  
+                </div>
+                <div class="row">
+                <div class="box">
+                    <h1 class="headings">Youtuber</h1>  
+                      <p>I'm also a Youtuber. I do videos about on how to programme and how to develop a Website   </p>
+                        </div>
+                         
+                        <div class="row">
+                          <div class="box">
+                            <h1 class="headings">Programmer</h1>  
+                              <p>I am the best Programmer. I also teaches anyone who is ready to programme. Just Contact me. </p>
+
+              
+                </div>   
+            </section>
+
+
+            <selection id="Price">
+                <div class="main">
+                    <h4 class="headings"> Price</h4>
+                    <img src="./hy.jpg" alt="">
+                </div>
+
+
+                
+            <selection id="Contact">
+                <div class="main">
+                    <h5 class="headings"> Contact Me On: </h5>
+                     <p>
+
+                     </p>
+                   
+                </div>
+                
+
+
+  
+    
+    
+    </body>
+    </html>
